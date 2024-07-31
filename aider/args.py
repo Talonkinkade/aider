@@ -32,7 +32,10 @@ def get_parser(default_config_files, git_root):
         "files", metavar="FILE", nargs="*", help="files to edit with an LLM (optional)"
     )
     group.add_argument(
-        "--file", action="append", metavar="FILE", help="specify a file to edit (can be used multiple times)"
+        "--file",
+        action="append",
+        metavar="FILE",
+        help="specify a file to edit (can be used multiple times)",
     )
     group.add_argument(
         "--openai-api-key",
@@ -351,6 +354,11 @@ def get_parser(default_config_files, git_root):
         action=argparse.BooleanOptionalAction,
         default=False,
         help="Prefix commit messages with 'aider: ' (default: False)",
+    )
+    group.add_argument(
+        "--commit-prompt",
+        metavar="PROMPT",
+        help="Specify a custom prompt for generating commit messages",
     )
     group.add_argument(
         "--dry-run",
