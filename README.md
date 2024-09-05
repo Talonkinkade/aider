@@ -9,6 +9,35 @@ Start a new project or work with an existing git repo.
 Aider works best with GPT-4o & Claude 3.5 Sonnet and can 
 [connect to almost any LLM](https://aider.chat/docs/llms.html).
 
+# TEKS-aligned Question Generation Application
+
+This application, built with Aider, generates questions aligned with the Texas Essential Knowledge and Skills (TEKS) standards. It uses AI to create various types of questions based on TEKS input and provides visual aids to support learning.
+
+## Features
+
+- Generate questions based on TEKS standards
+- Support for multiple question types:
+  - Multiple-choice
+  - Fill-in-the-blank
+  - Drag-and-drop
+  - Hot-spot
+- Visual aid generation (bar charts and pie charts)
+- Database integration for TEKS and Question models
+- Flask-based web interface
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies: `pip install -r requirements.txt`
+3. Set up the database: `python models.py`
+4. Run the Flask application: `python app.py`
+
+## Usage
+
+1. Access the web interface at `http://localhost:5000`
+2. Input TEKS standards
+3. Generate questions and visual aids
+
 <p align="center">
   <img
     src="https://aider.chat/assets/screencast.svg"
