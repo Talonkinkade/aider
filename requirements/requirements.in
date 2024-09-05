@@ -23,6 +23,10 @@ litellm
 flake8
 importlib_resources
 
+# Flask and Werkzeug for the web application
+Flask==2.0.3
+Werkzeug==2.0.3
+
 # The proper depdendency is networkx[default], but this brings
 # in matplotlib and a bunch of other deps
 # https://github.com/networkx/networkx/blob/d7132daa8588f653eacac7a5bae1ee85a183fa43/pyproject.toml#L57
