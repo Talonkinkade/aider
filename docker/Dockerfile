@@ -29,10 +29,4 @@ RUN playwright install --with-deps chromium
 
 ENTRYPOINT ["aider"]
 
-FROM base AS aider
-
-COPY . /aider
-RUN pip install --no-cache-dir /aider --extra-index-url https://download.pytorch.org/whl/cpu && \
-    rm -rf /aider
-
-ENTRYPOINT ["aider"]
+docker build -t aider-full --target aider-full .

@@ -1,4 +1,3 @@
 #!/bin/bash
 
-# Build the Docker image
-docker build -t my-jekyll-site -f scripts/Dockerfile.jekyll .
+docker build -t my-jekyll-site -d scripts/Dockerfile.jekyll 
